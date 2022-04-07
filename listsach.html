@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sách</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/js/book.js">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body>
+    
+        <h1 class="header-book">Thống kê các loại sách có trong thư viện</h1>
+        <div class="book-content">
+            <div class="page1-list-add">
+                <h1 class="heading-add-book">Nhập thông tin sách cần thêm</h1>
+                <form action="">
+                    <div class="page1-list-item">
+                        <label class="book-lable" for="">ID</label> <br>
+                        <input class="book-text" type="text"  id="id" required placeholder="Id">
+                    </div>
+                    <div class="page1-list-item">
+                        <label class="book-lable" for="">Tên sách</label><br>
+                        <input class="book-text" type="text"  id="name" required placeholder="Tên sách">
+                    </div>
+                    <div class="page1-list-item">
+                    <label class="book-lable" for="">Tác giả</label><br>
+                        <input class="book-text" type="text"  id="composer" required placeholder="Tác giả">
+                    </div>
+                    <div class="page1-list-item">
+                        <label class="book-lable" for="">Nhà xuất bản</label><br>
+                        <input class="book-text" type="text"  id="publishingcompany" required placeholder="Nhà xuất bản">
+                    </div>
+                    <div class="page1-list-item">
+                        <label class="book-lable" for="">Thể loại</label><br>
+                        <input class="book-text" type="text"  id="type" required placeholder="Thể loại">
+                    </div>
+                    <div class="page1-list-item__submit">
+                        <button class="btn btn-add" onclick="add()">Thêm</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-list-book">
+                <div class="table-list-book">
+                    <h3 class="sub-heading-table" >Sách</h3>
+                    <table border="1">
+                        <tr>
+                            <td>ID</td>
+                            <td>Tên sách</td>
+                            <td>Tác giả</td>
+                            <td>Nhà xuất bản</td>
+                            <td>Thể loại</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </div>
+
+    <script src="./assets/js/book.js"></script>
+    </body>
+</html>

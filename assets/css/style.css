@@ -1,0 +1,317 @@
+*{
+    box-sizing: inherit;
+    
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.grid{
+    width: 1500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid-col2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid-col2-4{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 20%;
+}
+
+.grid-col10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
+}
+@keyframes fadeIn {
+    form{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.2;
+    }
+}
+
+@keyframes growth{
+    form{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    animation: fadeIn ease-in 0.1s;
+}
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+.modal-body{
+    --growth-from: 0.7;
+    --growth-to: 1;
+    position: relative;
+    border-radius: 3px;
+    z-index: 2;
+    height: 550px;
+    width: 500px;
+    background-color: #fff;
+    margin: auto;
+    animation: growth linear 0.1s;
+}
+
+.aurth-form{
+    background-color: rgb(212, 88, 16);
+}
+.aurth-form__header{
+    margin-left: 10px;
+    font-size: 30px;    
+    font-weight: 500;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.aurth-form__form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 20px;
+    margin: 10px 10px;
+    color: rgb(215, 93, 11);
+}
+
+.aurth-form__input{
+    font-size: 15px;
+    margin: 0 10px;
+    padding: 4px;
+}
+
+.aurth-form__controls{
+    margin: 0px 50px 0 162px;
+}
+
+.btn{
+    min-width: 142px;
+    height: 36px;
+    font-size: 17px;
+    border: none;
+    border-radius: 3px;
+}
+
+.home-filter{
+    margin-top: 14px;
+}
+
+
+.btn-view{
+    background-color: rgb(226, 98, 13);
+    margin-top: 6px;
+    padding: 6px 15px;
+    font-size: 15px;
+    color: #fff;
+}
+.btn-add {
+    background-color: rgb(157, 33, 120);
+    margin-top: 6px;
+    padding: 6px 15px;
+    font-size: 15px;
+    color: #fff;
+}
+.btn-view:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn.btn-login{
+    background-color:  rgb(226, 98, 13);
+    border: none;
+    color: #fff;
+}
+
+.aurth-form-asisst{
+    display: flex;
+    margin: 10px;
+    padding: 18px;
+    justify-content: flex-end;
+    font-size: 15px;
+}
+
+.aurth-form-asisst .aurth-form__forget{
+    margin-right: 18px;
+    text-decoration: none;
+    color: rgb(226, 98, 13);
+    border-right: 1px solid #000;
+    padding-right: 18px;
+}
+.aurth-form-asisst .aurth-form__help{
+    text-decoration: none; 
+    color: aqua;
+}
+
+.aurth-form__socials{
+    margin: 30px 0;
+    background-color: #F5F5F5;
+    height: 93px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.aurth-form__social{
+    height: 26px;
+}
+
+.aurth-form__social:hover{
+    background-color: #ccc;
+}
+
+.aurth-form__socials-icon{
+    font-size: 18px;
+    color: #fff;
+    padding-right: 16px;
+    border-radius: 2px;
+}
+.aurth-form__socials-icon.fa-brands.fa-google{
+    color: #000;
+}
+.aurth-form__facebook{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px ;
+    background-color: #3A5A98;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+.aurth-form__google{
+    padding: 12px 32px ;
+    display: flex;
+    background-color: #fff;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+/* LIST SÁCH  PAGE 1           */
+.book-content{
+    display: flex;
+}
+
+.header-book{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+    font-size: 30px;
+    color: rgb(157, 33, 120);
+}
+
+.heading-add-book{
+    text-align: center;
+    color: rgb(157, 33, 120);
+}
+.page1-list-add{
+    margin-left: 14px;
+    /* margin-top: 20px; */
+    border: 1px solid #ccc;
+    width: 30%;
+    background-color: rgb(162, 140, 140);
+}
+.page1-list-item{
+    margin: 12px;
+}
+
+.book-lable{
+    color: rgb(21, 77, 90);
+}
+
+.book-text{
+    margin-top: 10px;
+    margin-left: 6px;
+    width: 90%;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.page1-list-item__submit{
+    display: flex;
+    justify-content: center;
+}
+.addbtn{
+    color: #fff;
+    border: #ccc;
+    padding: 10px 100px;
+    font-size: 17px;
+    margin-bottom: 14px;
+    margin-top: 10px;
+    background-color: rgb(212, 88, 16);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.addbtn:hover{
+    opacity: 0.6;
+}
+
+.table-list-book{
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+td{
+    padding: 5px 80px;
+    /* font-size: 1.1rem; */
+}
+tr{
+    margin: 0 8px;
+}
+
+
+.sub-heading-table{
+    font-size: 15px;
+    color: rgb(157, 33, 120);
+}
+.form-list-book{
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 2px solid #ccc;
+}

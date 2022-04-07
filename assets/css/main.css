@@ -1,0 +1,232 @@
+.header{
+    /* position: fixed; */
+    display: inline;
+    box-shadow: 4px 1px #000;
+    height: 149px;
+    /* top: 0;
+    z-index: 2;
+    left: 0;
+    right: 0; */
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(0,rgb(235, 88, 3),rgb(214, 70, 3));
+}
+
+.header__top-navbar{
+    margin-left: 34px;
+    color: aliceblue;
+}
+
+ .header__top-login  {
+    margin-top: 17px;
+    margin-bottom: 17px;
+    margin-left: 34px;
+    margin-right: 34px;
+    font-size: 17px;
+}
+
+.header__top-login > a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.header__middle{
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    background-color: #ccc;
+}
+
+.fa-magnifying-glass{
+    font-size: 16px;
+}
+
+.fa-magnifying-glass:hover{
+    /* padding: 7px; */
+    opacity: 0.8;
+   cursor: pointer;
+}
+
+ .header__middle-logo{
+     width: 30%;
+}
+
+.header__middle-item{
+    width: 150px;
+    height: 100px;
+    margin-left: 210px;
+}
+
+.header__middle-search{
+    width: 70%;
+    height: 34px;
+    display: flex;
+    background-color: #ccc;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-solid, .fas{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 22px;
+}
+ .fa-magnifying-glass{
+    
+    justify-content: center;
+    align-items: center;
+    width: 6%;
+    height: 27px;
+    
+    background-color:rgb(212, 88, 16); 
+}
+
+.header__middle-search .header__middle-find{
+    width: 70%;
+    padding: 4px 16px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.header__bottom{
+    background-color: #ccc;
+}
+
+.header__bottom-list{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.header__bottom-list .header__bottom-item{
+    list-style-type: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    z-index: 3;
+}
+
+.header__bottom-item--has-qr:hover .header__qr-code{
+    display: block;
+    z-index: 3px;
+}
+
+.header__bottom-item:hover a{
+    opacity:0.9 ;
+    color: rgb(18, 82, 138);
+    font-size: 17px;
+} 
+
+.header__bottom-item a{
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    font-weight: 500;
+}
+
+.header__qr-code{
+    position: absolute;
+    width: 182px;
+    background-color: #fff;
+    display: none;
+    animation: fadeIn ease .3s;
+}
+
+.header__qr-apps{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__qr-link:nth-child(1){
+    margin-left: 12px;
+}
+
+.header__qr-link:nth-child(2){
+    margin-left: 12px;    
+}
+.header__qr-download{
+    height: 18px;
+    
+}
+
+.container{
+    background-color: #f5f5f5;
+}
+.category-heading{
+    font-size: 1.6rem;
+    color: #333;
+     margin: 6px 0;
+     border-bottom: 1px solid #ccc;
+}
+
+.category-item{
+    padding-top: 4px;
+    padding-bottom: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 14px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.category-item__link{
+    color: #333;
+    position: relative;
+    transition: right linear 0.1s;
+    right: 0;
+}
+
+.category-heading-icon.fa-solid.fa-list{
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+.category-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-list .category-item a{
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.category{
+    background-color: #fff;
+}
+
+.category-item__link:hover {
+    right: -4px;
+    color: rgb(230, 103, 34);
+}
+
+.home-product-item{
+    position: relative;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: transform linear 0.1s;
+    will-change: transform;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.home-product-item:hover{
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
+}
+    
+.home-product-item-img{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 210px;
+    height: 210px; */
+    margin: auto;
+}
+.home-product-item-name{
+    font-size: 16px;
+}
