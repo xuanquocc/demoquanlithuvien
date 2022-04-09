@@ -23,9 +23,9 @@
                     <h1>Quản lí thư viện</h1>
                 </nav>
     
-                <div class="header__top-login">
-                    <a href="">Đăng nhập</a>
-                </div>
+                
+                    <button class="header__top-login js-header__top-login">Đăng nhập</button>
+                
             </div>
 
            <div class="header__middle">
@@ -269,52 +269,71 @@
 
         </footer>
 
-        <div class="modal">
-            <div class="modal__overlay">
-    
-            </div>
-    
-            <div class="modal-body">
-                <div class="modal-inner">
+        
+    </div>
+    <div class="modal js-modal">
+        <div class="modal__overlay js-modal-overlay">
                     <div class="aurth-form">
-                        <button class="aurth-form__header">Đăng nhâp</button>
+                        <div class="aurth-form__header">Đăng nhập</div>
                     </div>
+                    <div class="modal-body js-modal-body">
+                        <div class="aurth-form__form">
+                            <label for="">Tên đăng nhập</label>
+                            <input type="text" name=""  placeholder="Tên đăng nhập" id="" class="aurth-form__input">
 
-                    <div class="aurth-form__form">
-                        <label for="">Tên đăng nhập</label>
-                        <input type="text" name=""  placeholder="Tên đăng nhập" id="" class="aurth-form__input">
+                            <label for="">Email</label>
+                            <input type="email" name=""  placeholder="Email..." id="" class="aurth-form__input">
 
-                        <label for="">Email</label>
-                        <input type="email" name=""  placeholder="Email..." id="" class="aurth-form__input">
+                            <label for="">Mật khẩu</label>
+                            <input type="password" name=""  placeholder="Mật khẩu" id="" class="aurth-form__input">
+                        </div>
 
-                        <label for="">Mật khẩu</label>
-                        <input type="password" name=""  placeholder="Mật khẩu" id="" class="aurth-form__input">
+                        <div class="aurth-form-asisst">
+                            <a href="" class="aurth-form__forget">Quên mật khẩu ?</a>
+                            <a href="" class="aurth-form__help">Trợ giúp</a>
+                        </div>
+
+                        <div class="aurth-form__controls">
+                            <button class="btn">Trở lại</button>
+                            <button class="btn btn-login">Đăng nhập</button>
+                        </div>
+
+                        <div class="aurth-form__socials">
+                            <a href="" class="aurth-form__social aurth-form__facebook">
+                                <i class="aurth-form__socials-icon fa-brands fa-facebook"></i>
+                                Kết nối với Facebook
+                            </a>
+
+                            <a href="" class="aurth-form__social aurth-form__google">
+                                <i class="aurth-form__socials-icon fa-brands fa-google"></i>
+                                Kết nối với Google
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="aurth-form-asisst">
-                        <a href="" class="aurth-form__forget">Quên mật khẩu ?</a>
-                        <a href="" class="aurth-form__help">Trợ giúp</a>
-                    </div>
-
-                    <div class="aurth-form__controls">
-                        <button class="btn">Trở lại</button>
-                        <button class="btn btn-login">Đăng nhập</button>
-                    </div>
-
-                    <div class="aurth-form__socials">
-                        <a href="" class="aurth-form__social aurth-form__facebook">
-                            <i class="aurth-form__socials-icon fa-brands fa-facebook"></i>
-                            Kết nối với Facebook
-                        </a>
-
-                        <a href="" class="aurth-form__social aurth-form__google">
-                            <i class="aurth-form__socials-icon fa-brands fa-google"></i>
-                            Kết nối với Google
-                        </a>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
+    <script>
+        const buttonloginn = document.querySelector('.js-header__top-login')
+        const modal = document.querySelector('.js-modal')
+        const modalbody = document.querySelector('.js-modal-body')
+        const modaloverlay = document.querySelector('.js-modal-overlay')
+
+        function showformlogin(){
+            modal.classList.add('open')
+        }
+
+        function hideformlogin(){
+            modal.classList.remove('open')
+        }
+
+        
+        buttonloginn.addEventListener('click', showformlogin)
+        
+        modal.addEventListener('click',hideformlogin)
+        modaloverlay.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+    </script>
 </body>
 </html>

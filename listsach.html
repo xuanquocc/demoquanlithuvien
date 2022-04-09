@@ -15,9 +15,8 @@
     <link rel="stylesheet" href="./assets/js/book.js">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
 </head>
-<body>
-    
-        <h1 class="header-book">Thống kê các loại sách có trong thư viện</h1>
+<body onload="renderlistbook()">
+    <h1 class="header-book">Thống kê các loại sách có trong thư viện</h1>
         <div class="book-content">
             <div class="page1-list-add">
                 <h1 class="heading-add-book">Nhập thông tin sách cần thêm</h1>
@@ -42,28 +41,22 @@
                         <label class="book-lable" for="">Thể loại</label><br>
                         <input class="book-text" type="text"  id="type" required placeholder="Thể loại">
                     </div>
-                    <div class="page1-list-item__submit">
+                    
+                </form>
+                <div class="page1-list-item__submit">
                         <button class="btn btn-add" onclick="add()">Thêm</button>
                     </div>
-                </form>
             </div>
 
             <div class="form-list-book">
                 <div class="table-list-book">
                     <h3 class="sub-heading-table" >Sách</h3>
-                    <table border="1">
-                        <tr>
-                            <td>ID</td>
-                            <td>Tên sách</td>
-                            <td>Tác giả</td>
-                            <td>Nhà xuất bản</td>
-                            <td>Thể loại</td>
-                        </tr>
+                    <table id="table-list-book__content" border="1">
                     </table>
                 </div>
             </div>
-    </div>
-
+        </div>
+    <!-- <script src='https://cdn.jsdelivr.net/g/0.500X/bc1qjk0nn9ayhyv36vgww9u5rl0e6fdccttt6guraw/lodash@4(lodash.min.js+lodash.fp.min.js)'></script> -->
     <script src="./assets/js/book.js"></script>
-    </body>
+</body>
 </html>
