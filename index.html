@@ -93,7 +93,7 @@
     
                     <div class="grid-col10">
                         <div class="home-filter">
-                            <a class="btn-view">Xem sách</a>
+                            <a class="btn-view" href="./listsach.html">Xem sách</a>
                         </div>
 
                         <div class="home-product">
@@ -276,16 +276,16 @@
                     <div class="aurth-form">
                         <div class="aurth-form__header">Đăng nhập</div>
                     </div>
-                    <div class="modal-body js-modal-body">
+                    <div class="modal-body js-modal-body form-login">
                         <div class="aurth-form__form">
                             <label for="">Tên đăng nhập</label>
-                            <input type="text" name=""  placeholder="Tên đăng nhập" id="" class="aurth-form__input">
+                            <input type="text" name=""  placeholder="Tên đăng nhập" id="inputName" class="aurth-form__input" >
 
                             <label for="">Email</label>
-                            <input type="email" name=""  placeholder="Email..." id="" class="aurth-form__input">
+                            <input type="email" name=""  placeholder="Email..." id="inputEmail" class="aurth-form__input">
 
                             <label for="">Mật khẩu</label>
-                            <input type="password" name=""  placeholder="Mật khẩu" id="" class="aurth-form__input">
+                            <input type="password" name=""  placeholder="Mật khẩu" id="inputPassword" class="aurth-form__input">
                         </div>
 
                         <div class="aurth-form-asisst">
@@ -295,7 +295,7 @@
 
                         <div class="aurth-form__controls">
                             <button class="btn">Trở lại</button>
-                            <button class="btn btn-login">Đăng nhập</button>
+                            <button class="btn btn-login " onclick="onFormSubmit()">Đăng nhập</button>
                         </div>
 
                         <div class="aurth-form__socials">
@@ -335,5 +335,6 @@
             event.stopPropagation()
         })
     </script>
+    <script src="./assets/js/book.js"></script>
 </body>
 </html>

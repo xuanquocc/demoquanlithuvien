@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/js/book.js">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
 </head>
-<body onload="renderlistbook()">
+<body>
     <h1 class="header-book">Thống kê các loại sách có trong thư viện</h1>
         <div class="book-content">
             <div class="page1-list-add">
@@ -42,9 +42,14 @@
                         <input class="book-text" type="text"  id="type" required placeholder="Thể loại">
                     </div>
                     
+                    <div class="page1-list-item">
+                        <br>
+                        <input class="book-text" type="hidden"  id="index" >
+                    </div>
                 </form>
                 <div class="page1-list-item__submit">
-                        <button class="btn btn-add" onclick="add()">Thêm</button>
+                        <button id="save" class="btn btn-add" onclick="add()">Thêm</button>
+                        <button style="display: none;" id="update" class="btn btn-add" onclick="change()">Update</button>
                     </div>
             </div>
 
