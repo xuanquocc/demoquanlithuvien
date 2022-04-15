@@ -55,19 +55,23 @@ function renderlistbook() {
     let storeitem = localStorage.getItem('books');
     let books = storeitem ? JSON.parse(storeitem) : [];
 
-    if (books.length === 0) return false;
+    if (books.length === 0){
+        
+        return false;
+    } 
+    
     let tablecontent = `<tr>
-        <td>ID</td>
-        <td>Name</td>       
-        <td>Author</td>
-        <td>Publishing</td>
-        <td>Type</td>
-        <td>Action</td></tr>`;
+        <th>ID</th>
+        <th>Name</th>       
+        <th>Author</th>
+        <th>Publishing</th>
+        <th>Type</th>
+        <th>Action</th></tr>`;
 
     books.forEach((book, index) => {
         let bookId = index;
         index++;
-        tablecontent += `<tr>
+        tablecontent += `<tr style="font-size: 15px;">
             <td>${book.id}</td>
             <td>${book.name}</td>
             <td>${book.composer}</td>

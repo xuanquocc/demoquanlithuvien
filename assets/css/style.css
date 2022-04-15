@@ -307,16 +307,26 @@ label{
     margin-left: 40px;
     margin-right: 40px;
 }
-td{
-    padding: 5px 50px;
-    font-size: 11px;
+table#table-list-book__content {
+    width: 940px;
+}
+/* #table-list-book__content> td{
+    padding: 10px 50px;
+    font-size: 15px;
     display: inline-block;
     min-width: 153px ;
 }
-tr{
+#table-list-book__content> tr{
     margin: 0 4px;
+} */
+th{
+    font-size: 15px;
 }
+td{
+    font-size: 15px;
 
+}
+tr
 .sub-heading-table{
     font-size: 15px;
     color: rgb(157, 33, 120);
